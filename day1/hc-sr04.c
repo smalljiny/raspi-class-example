@@ -50,12 +50,12 @@ float getDistance() {
 }
 
 int main(void) {
-    initialize();
-    while (1) {
-        float distance = getDistance();
-        printf("Distance: %0.2fcm\n", distance);
-        delay(1000);
-    }
+  initialize();
+  while (1) {
+    float distance = getDistance();
+    printf("Distance: %0.2fcm\n", distance);
+    delay(1000);
+  }
 
-    return 0;
+  return 0;
 }
