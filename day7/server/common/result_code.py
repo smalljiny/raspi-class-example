@@ -1,0 +1,5 @@
+# coding=utf-8
+RESULT_OK = 0
+
+ERR_NO_USER = 1
+ERR_INVALID_PASSWORD = 2
