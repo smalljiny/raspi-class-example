@@ -83,6 +83,7 @@ def get_room_info_from_request():
     try:
         min_temperature = data["min_temperature"]
     except KeyError:
+        #max_temperature = 28.00
         min_temperature = 18.00
 
     try:

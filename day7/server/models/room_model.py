@@ -7,7 +7,7 @@ def get_rooms(connection):
         cursor.execute(sql)
         rs = cursor.fetchall()
 
-    result = [];
+    result = []
     for row in rs:
         result.append({
             'id':row[0],
