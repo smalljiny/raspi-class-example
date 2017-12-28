@@ -49,7 +49,7 @@ def create_new_room():
     except KeyError:
         return invalid_session()
     except jwt.exceptions.DecodeError:
-        return invalid_sessio
+        return invalid_session()
 
     params = get_room_info_from_request()
 
