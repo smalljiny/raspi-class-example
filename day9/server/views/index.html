@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>원격 계측 실무 특강</title>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    (function poll() {
+      setTimeout(function() {
+        $.ajax({
+          url: "/server/api/function",
+          type: "GET",
+          success: function(data) {
+            console.log("polling");
+          },
+          dataType: "json",
+          complete: poll,
+          timeout: 2000
+        })
+      }, 5000);
+    })();
+  </script>
+</head>
+
+<body>
+  Welcome
+</body>
+
+</html>
