@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">LED Controller</string>
+  <string name="led_0">LED #0</string>
+  <string name="led_1">LED #1</string>
+  <string name="btn_close">Close</string>
+</resources>
